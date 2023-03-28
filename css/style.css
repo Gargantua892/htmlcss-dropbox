@@ -3,8 +3,14 @@
     box-sizing: border-box;
 }
 
+p{
+    font-size: 14px;
+    line-height: 170%;
+}
+
 h4{
     font-size: 18px;
+    margin: 0px;
 }
 
 h5{
@@ -12,6 +18,9 @@ h5{
     margin-bottom: 8px;
 }
 
+img{
+    max-width: 100%;
+}
 
 
 /* ----------------------------- Struttura ----------------------------- */
@@ -26,14 +35,32 @@ h5{
 }
 
 
-
 .row{
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .space-between{
     justify-content: space-between;
+}
+
+
+.st-46{
+    margin-top: 46px!important;
+}
+
+.col-4{
+    flex: 4;
+}
+
+.col-6{
+    flex: 6;
+}
+
+
+.col img{
+    width: 100%;
 }
 
 
@@ -43,9 +70,10 @@ h5{
 .btn{
     text-decoration: none;
     padding: 10px 16px;
-    width: 100%;
+    display: inline-block;
 }
 
+/* Bottone primario */
 .primary-btn{
     background-color: #0261ff;
     color: #fff;
@@ -56,6 +84,17 @@ h5{
     max-width: 290px;
 }
 
+/* Fine Bottone primario */
+
+/* Bottone secondario */
+.secondary-btn{
+    border: 2px solid lightgrey;
+    color: lightgray;
+}
+
+/* Fine Bottone secondario */
+
+/* Radio btn */
 .btn.menu-btn{
     padding: 8px 24px;
 }
@@ -136,10 +175,6 @@ header nav li{
     padding-top: 100px;
 }
 
-#hero img{
-    width: 100%;
-}
-
 #hero h1{
     font-size: 3.5em;
 }
@@ -167,12 +202,42 @@ header nav li{
 }
 
 /* ----------------------------- Tabs ----------------------------- */
+.plans-section{
+    margin: 10vw 0px;
+}
+
+.plans-section h4{
+    margin-bottom: 12px;
+}
 
 .tab{
     border: 1px solid lightgray;
     width: calc( (100% / 3) - 36px );
     font-size: 12px;
 }
+
+/* tab 100% */
+.tab.w-100{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.tab.w-100 .tab-body{
+   display: flex;
+   align-items: flex-start;
+   padding: 20px;
+}
+
+.tab.w-100 .tab-body div:first-child{
+    flex: 7;
+    padding-right: 36px;
+ }
+
+ .tab.w-100 .tab-body a{
+    flex: 3;
+ }
+
+ /* Fine tab 100% */
 
 .tab-header{
     padding: 10px 0px;
@@ -213,3 +278,34 @@ hr{
 .fa-check{
     color: #0261ff;
 }
+
+ /* Partners */
+
+ .partner{
+    padding: 140px 0px;
+ }
+
+ .partner .col{
+    padding: 24px;
+ } 
+
+ .partner .col.col-4 *{
+    margin: 12px 0px;
+ } 
+
+ .partner .col:first-child{
+    padding-left: 0px;
+ } 
+
+ /* features */
+ .feature .feature-box{
+    width: calc((100% /3 ) - 16px );
+    margin-top: 36px;
+ }
+
+ .feature .row{
+    column-gap: 16px;
+ }
+
+ 
+ 
