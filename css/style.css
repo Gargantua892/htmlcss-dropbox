@@ -3,11 +3,20 @@
     box-sizing: border-box;
 }
 
+h4{
+    font-size: 18px;
+}
+
+h5{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
 
 
 /* ----------------------------- Struttura ----------------------------- */
 .container{
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -23,6 +32,10 @@
     width: 100%;
 }
 
+.space-between{
+    justify-content: space-between;
+}
+
 
 
 /* ----------------------------- Bottoni ----------------------------- */
@@ -30,18 +43,55 @@
 .btn{
     text-decoration: none;
     padding: 10px 16px;
+    width: 100%;
 }
 
 .primary-btn{
     background-color: #0261ff;
     color: #fff;
-    max-width: 290px;
     text-align: center;
+}
+
+.primary-btn.fixed-width{
+    max-width: 290px;
 }
 
 .btn.menu-btn{
     padding: 8px 24px;
 }
+
+.radio-btn .icon:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    margin-right: 4px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.radio-btn .icon:active:before{
+    border: 5px solid #0261ff;
+    box-sizing: border-box;
+}
+
+.radio-btn .icon:focus-visible:before{
+    border: 5px solid #0261ff;
+    box-sizing: border-box;
+}
+
+.radio-btn .icon{
+    display: flex;
+    align-items: center;
+}
+
+.radio-btn{
+    display: flex;
+    column-gap: 16px;
+    margin: 56px 0px;
+}
+
 
 
 /* ----------------------------- Nav ----------------------------- */
@@ -114,4 +164,52 @@ header nav li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/* ----------------------------- Tabs ----------------------------- */
+
+.tab{
+    border: 1px solid lightgray;
+    width: calc( (100% / 3) - 36px );
+    font-size: 12px;
+}
+
+.tab-header{
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.tab i{
+    font-size: 12px;
+}
+
+.tab-body{
+    padding: 8px 24px;
+}
+
+.tab-body ul{
+    padding: 0px;
+    list-style-type: none;
+}
+
+.tab-body li{
+    padding: 12px 0px;
+    display: flex;
+    column-gap: 5px;
+    align-items: baseline;
+}
+
+.tab-body p{
+    margin: 0px;
+}
+
+hr{
+    width: 20%;
+    color: #636363;
+    margin: 36px 0px;
+}
+
+.fa-check{
+    color: #0261ff;
 }
