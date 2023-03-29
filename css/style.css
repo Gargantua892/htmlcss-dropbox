@@ -22,6 +22,10 @@ img{
     max-width: 100%;
 }
 
+ul{
+    padding: 0px;
+    list-style-type: none;
+}
 
 /* ----------------------------- Struttura ----------------------------- */
 .container{
@@ -223,7 +227,7 @@ header nav li{
     font-size: 36px;
 }
 
-.info-container{
+#hero .info-container{
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -280,11 +284,6 @@ header nav li{
 
 .tab-body{
     padding: 8px 24px;
-}
-
-.tab-body ul{
-    padding: 0px;
-    list-style-type: none;
 }
 
 .tab-body li{
@@ -416,3 +415,21 @@ hr{
  .faq-container h2{
     margin-bottom: 44px;
  }
+
+ /* footer */
+
+ footer{
+    background-color: black;
+    color: #fff;
+    padding: 64px 0px;
+ }
+
+ footer li{
+    padding: 8px 0px;
+ }
+
+footer .info-container{
+    width: calc((100% / 5) - 8px);
+}
+
+ 
