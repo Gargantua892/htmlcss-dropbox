@@ -85,11 +85,29 @@ ul{
     align-items: center;
 }
 
-
-.py-100{
-    padding: 100px 0px;
+.padding-y-24{
+    padding: 24px 0px;
 }
 
+.padding-y-40{
+    padding: 40px 0px;
+}
+
+.padding-y-64{
+    padding: 64px 0px;
+}
+
+.margin-y-24{
+    margin: 24px auto;
+}
+
+.margin-y-40{
+    margin: 40px auto;
+}
+
+.margin-y-64{
+    margin: 64px auto;
+}
 
 /* ----------------------------- Bottoni ----------------------------- */
 
@@ -109,8 +127,9 @@ ul{
 .primary-btn-inverted{
     background-color: #fff;
     color: #0261ff;
-    text-align: center;
-    line-height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .primary-btn.fixed-width{
@@ -236,7 +255,8 @@ header nav li{
 
 /* ----------------------------- Tabs ----------------------------- */
 .plans-section{
-    margin: 10vw 0px;
+    margin-top: 10vw;
+    margin-bottom: 4vw;
 }
 
 .plans-section h4{
@@ -293,6 +313,10 @@ header nav li{
     align-items: baseline;
 }
 
+.tab-body .primary-btn{
+    width: 100%;
+}
+
 .tab-body p{
     margin: 0px;
 }
@@ -308,10 +332,6 @@ hr{
 }
 
  /* Partners */
-
- .partner{
-    padding: 140px 0px;
- }
 
  .partner .col{
     padding: 24px;
@@ -392,10 +412,6 @@ hr{
     background-color: #ffd830;
  }
 
- section.light-blue.cta, .faq-container{
-    padding: 72px 0px;
- }
-
  /* section.light-blue.cta {
    
  } */
@@ -421,7 +437,6 @@ hr{
  footer{
     background-color: black;
     color: #fff;
-    padding: 64px 0px;
  }
 
  footer li{
@@ -431,5 +446,3 @@ hr{
 footer .info-container{
     width: calc((100% / 5) - 8px);
 }
-
- 
