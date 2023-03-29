@@ -27,6 +27,13 @@ ul{
     list-style-type: none;
 }
 
+a:hover:not(.btn){
+    color: #0261ff;
+}
+
+.relative{
+    position: relative;
+}
 /* ----------------------------- Struttura ----------------------------- */
 .container{
     max-width: 1200px;
@@ -122,6 +129,11 @@ ul{
     background-color: #0261ff;
     color: #fff;
     text-align: center;
+    transition: 0.2s;
+}
+
+.primary-btn:hover{
+    background-color: #014bc3;
 }
 
 .primary-btn-inverted{
@@ -130,6 +142,12 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
+}
+
+.primary-btn-inverted:hover{
+    background-color: #0261ff;
+    color: #fff;
 }
 
 .primary-btn.fixed-width{
@@ -225,6 +243,11 @@ header nav li{
     flex-direction: column;
     justify-content: center;
     padding-top: 100px;
+    padding: 120px 0px;
+}
+
+#hero .col img{
+    position: absolute;
 }
 
 #hero h1{
@@ -296,6 +319,10 @@ header nav li{
     padding: 10px 0px;
     text-align: center;
     border-bottom: 1px solid lightgray;
+}
+
+.tab-header i{
+    margin-right: 4px;
 }
 
 .tab i{
@@ -374,10 +401,29 @@ hr{
     align-items: center;
  }
 
+ .clients .client-box:not(.column)::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+ }
+
  .clients .client-box:not(.column) img{
     width: 50%;
     filter: invert(100%);
 
+ }
+
+ .clients .img-container{
+    max-height: 40px;
+    max-width: 40px;
+ }
+
+ .client-box.column{
+   padding: 36px;
+ }
+
+ .client-box.column img{
+    max-width: 60%;
  }
 
  .green{
@@ -431,6 +477,14 @@ hr{
  .faq-container h2{
     margin-bottom: 44px;
  }
+
+ .label-expand{
+    display: none;
+ }
+
+.faq-label .icon-container::hover .label-expand{
+    display: block;
+}
 
  /* footer */
 
