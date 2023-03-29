@@ -45,6 +45,10 @@ img{
     flex-direction: column;
 }
 
+.d-flex{
+    display: flex;
+}
+
 .space-between{
     justify-content: space-between;
 }
@@ -96,6 +100,13 @@ img{
     background-color: #0261ff;
     color: #fff;
     text-align: center;
+}
+
+.primary-btn-inverted{
+    background-color: #fff;
+    color: #0261ff;
+    text-align: center;
+    line-height: 43px;
 }
 
 .primary-btn.fixed-width{
@@ -380,4 +391,28 @@ hr{
 
  .yellow{
     background-color: #ffd830;
+ }
+
+ section.light-blue.cta, .faq-container{
+    padding: 72px 0px;
+ }
+
+ /* section.light-blue.cta {
+   
+ } */
+
+
+ /* Faq */
+
+ .faq-label{
+    padding: 24px 0px;
+    border-bottom: 2px solid lightgray;
+ }
+
+ .faq-container>div:first-of-type{
+    border-top: 2px solid lightgray;
+ }
+
+ .faq-container h2{
+    margin-bottom: 44px;
  }
